@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes ESCAPATE</title>
+    <link rel="icon" type="image/x-icon" href="../imagenes/avlogo.png">
+</head>
+<body>
+    <header>
+        <h1>Agencia de viajes</h1>
+        <img src="../imagenes/avlogo.png" alt="" width="100">
+    </header>
+    <br>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./presupuestos.html">Presupuestos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Contacto</h1>
+        <form action="http://httpbin.org/get" name="formulario1" method="get">
+        <fieldset>
+            <legend>Iniciar sesion</legend>
+            <br>
+            <label for="user">Usuario</label>
+            <input type="text" name="usuario" id="user">
+            <br>
+            <br>
+            <label for="passwd">Contrasena</label>
+            <input type="password" name="contrasena" id="passwd">
+            <br>
+            <br>
+            <input type="checkbox" value="si">Quieres ser recordado
+            <br>
+            <br>
+            <input type="submit" value="Iniciar sesion">
+        </fieldset>
+        </form>
+        <br>
+        <form action="http://httpbin.org/get" name="formulario2" method="get">
+        <fieldset>
+            <legend>Registrarse</legend>
+            <br>
+            <label for="nombreuser">Nombre de usuario</label>
+            <input type="text" name="nombreusuario" id="nombreuser">
+            <br>
+            <br>
+            <label for="passworduser">Contrasena de usuario</label>
+            <input type="password" name="contrasenadeusuario" id="passworduser">
+            <br>
+            <br>
+            <label for=""">Genero</label>
+            <br>
+            <input type="radio" name="genero" id="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" id="femenino">
+            <label for="femenino">Femenino</label>
+            <br>
+            <br>
+            <label for="fechanacim">Fecha de nacimiento</label>
+            <input type="date" name="fechadenacimiento" id="fechanacim">
+            <br>
+            <br>
+            <label for="tvia">Tipo de avenida</label>
+            <select name="via" id="tvia">
+                <option value="a">Avenida</option>
+                <option value="c">Calle</option>
+                <option value="p">Plaza</option>
+            </select>
+            <br>
+            <br>
+            <label for="browser">Ciudad</label>
+            <input list="browsers" id="browser" name="ciudad">
+            <datalist id="browsers">
+                <option value="Zaragoza"></option>
+                <option value="Huesca"></option>
+                <option value="Teruel"></option>
+                <option value="Madrid"></option>
+                <option value="Pamplona"></option>
+                <option value="Bilbao"></option>
+                <option value="Santander"></option>
+                <option value="Sevilla"></option>
+                <option value="Valencia"></option>
+                <option value="Malaga"></option>
+            </datalist>
+            <br>
+            <br>
+            <input type="submit" value="Registrarse">
+        </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Autor: Alex Diez</p>
+    </footer>
+</body>
+</html>
